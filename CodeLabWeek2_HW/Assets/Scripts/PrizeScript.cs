@@ -17,7 +17,7 @@ public class PrizeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -27,7 +27,7 @@ public class PrizeScript : MonoBehaviour
             other.gameObject.GetComponent<PlayerController>().Score++; //get the playerController and add 1 to its score
         }
    
-    Destroy(gameObject); //destroy the gameObject this script is attached to
+    Destroy(gameObject); //then destroy the gameObject this script is attached to
     }
 
     

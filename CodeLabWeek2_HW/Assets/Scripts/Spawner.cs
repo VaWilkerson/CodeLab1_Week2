@@ -7,8 +7,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 1, 2);    //spawns 1 BreadSlice every 2 seconds, repeating 
-        //VCS comment to test update
+        InvokeRepeating("Spawn", 0, 2);    //spawns BreadSlice immediately then every 2 seconds repeating 
     }
     
     // Update is called once per frame
