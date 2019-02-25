@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManger : MonoBehaviour
 {
     private int score = 0; //private = not available in the inspector 
 
     public static GameManger instance;
+    
+    public Text scoreText;
+
 
     public int Score //Property's are for getting and setting a value'
     {
@@ -44,6 +49,16 @@ public class GameManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+//    private bool paused;
+    
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reloads current scene
+        }
+        
+        //scoreText.text = other.gameObject.GetComponent<PlayerController>().Score++.ToString();
+        //^ need to find a way to reference the player scores in game manager 
+
         //Score ++;
         //print("Your current score is: " + Score);
     }

@@ -8,8 +8,7 @@ using UnityEngine.UI;
 public class PrizeScript : MonoBehaviour
 {
 
-    public Text scoreText;
-    
+    //public Text scoreText;
     
     // Update is called once per frame
     void Update()
@@ -21,7 +20,9 @@ public class PrizeScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))  //if the collider that hit us has a tag "player" 
         {
-            other.gameObject.GetComponent<PlayerController>().Score++; //get the playerController and add 1 to its score
+            other.gameObject.GetComponent<PlayerController>().Score++; 
+            //get the playerController and add 1 to its score
+            
         }
    
     Destroy(gameObject); //then destroy the gameObject this script is attached to

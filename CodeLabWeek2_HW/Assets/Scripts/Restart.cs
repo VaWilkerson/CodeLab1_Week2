@@ -11,16 +11,16 @@ using UnityEngine.SceneManagement;
                         
     public class Restart : MonoBehaviour
     {
-        private bool paused;
-
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                //SceneManager.LoadScene("SampleScene");    //Loads the scene named "SampleScene"
-                //SceneManager.LoadScene(0);    //Loads the first scene in Build Settings
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reloads current scene
-            }
+//        private bool paused;
+//
+//        void Update()
+//        {
+//            if (Input.GetKeyDown(KeyCode.R))
+//            {
+//                //SceneManager.LoadScene("SampleScene");    //Loads the scene named "SampleScene"
+//                //SceneManager.LoadScene(0);    //Loads the first scene in Build Settings
+//                SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reloads current scene
+//            }
 
 
 
@@ -39,7 +39,7 @@ using UnityEngine.SceneManagement;
 
         }
 
-    }
+    
 
     
   
