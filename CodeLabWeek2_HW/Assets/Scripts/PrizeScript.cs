@@ -24,9 +24,11 @@ public class PrizeScript : MonoBehaviour
             //get the playerController and add 1 to its score
             
         }
+        
+        HighScoreManager.instance.Score++;
    
     Destroy(gameObject); //then destroy the gameObject this script is attached to
     }
 
-    
+    //
 }

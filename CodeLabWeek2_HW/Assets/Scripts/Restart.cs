@@ -11,33 +11,34 @@ using UnityEngine.SceneManagement;
                         
     public class Restart : MonoBehaviour
     {
-//        private bool paused;
-//
-//        void Update()
-//        {
-//            if (Input.GetKeyDown(KeyCode.R))
-//            {
-//                //SceneManager.LoadScene("SampleScene");    //Loads the scene named "SampleScene"
-//                //SceneManager.LoadScene(0);    //Loads the first scene in Build Settings
-//                SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reloads current scene
-//            }
+        private bool paused;
 
-
-
-            /*if (Input.GetKeyDown(KeyCode.P))    //right now all this does is keep the players from moving unless the "P" key is pressed repeatedly
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.R))
             {
-                Time.timeScale = 1;
-                paused = false;
-
+                //SceneManager.LoadScene("SampleScene");    //Loads the scene named "SampleScene"
+                //SceneManager.LoadScene(0);    //Loads the first scene in Build Settings
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Reloads current scene
             }
-            else
-            {
-                Time.timeScale = 0;
-                paused = true;
-            } 
-            */
 
+
+
+//            if (Input.GetKeyDown(KeyCode.P)
+//            ) //right now all this does is keep the players from moving unless the "P" key is pressed repeatedly
+//            {
+//                Time.timeScale = 1;
+//                paused = false;
+//
+//            }
+//            else
+//            {
+//                Time.timeScale = 0;
+//                paused = true;
+//            }
         }
+
+    }
 
     
 

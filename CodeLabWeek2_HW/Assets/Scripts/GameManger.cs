@@ -12,7 +12,6 @@ public class GameManger : MonoBehaviour
     
     public Text scoreText;
 
-
     public int Score //Property's are for getting and setting a value'
     {
         get { return score; }
@@ -30,7 +29,7 @@ public class GameManger : MonoBehaviour
                 score = 0; //sets the minimum score to 0 if there were a way to get a negative score. 
             }
             
-            print("Score now equals " + score); //once you finish using a message to help with your code, comment it out 
+            print("Score now equals " + score); //once you finish using a message to help with your code, comment it out. or dont, it's your life
         }
     }
     
@@ -41,8 +40,8 @@ public class GameManger : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
             instance = this; //"this" means this instance of a script I am currently in 
-            //if you havent (null) seen a Game Manager script, dont get rid of it. 
-            //if a gamemanager script DOES exist, destroy any duplicates 
+            //if you haven't (null) seen a Game Manager script, don't get rid of it. 
+            //if a gameManager script DOES exist, destroy any duplicates 
         }
     }
 
